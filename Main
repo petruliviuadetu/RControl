@@ -1,0 +1,16 @@
+@echo off 
+cd C:\Users\%username%\RControl
+
+echo Enter !help if you need help...
+
+:Main
+echo.
+set /p bang=Command: 
+
+if %bang% == "!help" goto helpCommand
+
+:helpCommand
+echo Help command was executed
+pause
+cls
+goto Main
